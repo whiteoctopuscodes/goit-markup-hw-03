@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.css">>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +13,7 @@
 </head>
 <body>
     <header>
+        <div class="container">
         <nav>
         <a class="top emblem" href="./index.html"><span>Web</span>Studio</a>
         
@@ -21,10 +23,14 @@
                 <li class="nav-link"><a href="">Контакты</a></li>
             </ul>
         </nav>
+        <div class="header-group">
             <a class="header-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="header-contacts" href="tel:+380961111111">+38 096 111 11 11</a>        
+            <a class="header-contacts" href="tel:+380961111111">+38 096 111 11 11</a> 
+        </div>
+        </div>       
     </header>
     <main>
+        <div class="container portfolio-container">
         <ul class="categories">
             <li class="categories-item">
                 <button class="categories-button" type="button">Все</button>
@@ -125,15 +131,19 @@
                 </a>
             </li>
         </ul>
+    </div>
     </main>
     <footer>
-        <a class="bottom emblem" href="./index.html"><span>Web</span>Studio</a>
-        <address>
-            <ul class="contact-information">
-                <li><a class="google-address" href="https://goo.gl/maps/PNrH4zYKMws1Ccoz9" target="_blank" rel="noopener noreferrer" title="Перенесет вам в Google-карты">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li><a class="footer-contacts" href="mailto:info@example.com">info@example.com</a></li>
-                <li><a class="footer-contacts" href="tel:+380991111111">+38 099 111 11 11</a></li>
-            </ul>
+        <div class="container">
+            <a class="bottom emblem" href="./index.html"><span>Web</span>Studio</a>
+            <address>
+                <ul class="contact-information">
+                    <li><a class="google-address" href="https://goo.gl/maps/PNrH4zYKMws1Ccoz9" target="_blank" rel="noopener noreferrer" title="Перенесет вам в Google-карты">г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li><a class="footer-contacts" href="mailto:info@example.com">info@example.com</a></li>
+                    <li><a class="footer-contacts" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
         </address>
     </footer>
 </body>
