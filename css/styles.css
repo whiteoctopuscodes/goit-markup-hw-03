@@ -197,6 +197,10 @@ footer {
 .advantagelist {
     width: calc((100% - 90px) / 4);
 }
+.advantagelist:not(:last-child) {
+    margin-right: 30px;
+}
+
 .advantagelist h3{
     font-weight: 700;
     font-size: 14px;
