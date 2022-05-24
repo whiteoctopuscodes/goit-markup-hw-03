@@ -7,6 +7,7 @@ body {
     --main-text-color:#212121;
     --hover-focus-color: #2196F3;
     --background: #2F303A;
+    --partners-link: #AFB1B8;
 }
 
 .container  {
@@ -72,12 +73,33 @@ header a {
     color: var(--hover-focus-color);
 }
 .header-contacts {
+    display: flex;
+    align-items: center;
     color: var(--text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    margin-right: 50px;
+}
+.mail::before {
+    content: "";
+    display: block;
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+    background-color: #757575;
+}
+.phone::before {
+    content: "";
+    display: block;
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+    background-color: #757575;
+}
+.mail:hover::before,
+.phone:hover::before {
+    background-color: var(--hover-focus-color);
 }
 .header-contacts:hover{
     color: var(--hover-focus-color);
@@ -135,6 +157,9 @@ footer {
     padding-bottom: 60px;
     background-color: var(--background);
 }
+.main-information {
+    margin-right: 70px;
+}
 .footer-contacts {
     text-decoration: none;
     font-style: normal;
@@ -153,7 +178,40 @@ footer {
 .contact-information li:first-child {
     margin-top: 20px;
 }
-
+.footer {
+    display: flex;
+    align-items: baseline;
+}
+.footersocials {
+}
+.footer-socials-list {
+    display: flex;
+    text-decoration: none;
+}
+.footersocials h2{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.footer-socials-item {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+.footer-socials-item:hover {
+    background-color: var(--hover-focus-color);
+}
+.footer-socials-item:not(:last-child) {
+    margin-right: 10px;
+}
+.footer-socials-svg {
+    
+}
 
 /*INDEX*/
 
@@ -221,6 +279,15 @@ footer {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+}
+.advantagelist::before {
+    display: block;
+    margin-bottom: 30px;
+    content: "";
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+
 }
 
 /*OUR WORK*/
@@ -298,6 +365,51 @@ footer {
 .team-group {
     padding-top: 30px;
     padding-bottom: 30px;
+}
+.socials {
+    display: flex;
+    margin-bottom: 30px;
+    list-style: none;
+}
+.socials-item {
+    margin: 0 auto;
+}
+.socials-item:not(:last-child) {
+    margin-right: 10px;
+}
+.socials-svg {
+    width: 44px;
+    height: 44px
+}
+
+/*CLIENTS*/
+
+.partners-h2 {
+    padding-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.partners-list {
+    display: flex;
+    list-style: none;
+    height: 92px;
+}
+.partners-item {
+    border: 1px solid var(--partners-link);
+    width: calc((100% - 150px)/ 6); 
+    border-radius: 4px;
+}
+.partners-item:hover {
+    border: 1px solid var(--hover-focus-color);
+}
+.partners-item:not(:last-child) {
+    margin-right: 30px;
+}
+.partners-svg {
+    width: 60px;
 }
 
 /*PORTFOLIO*/
